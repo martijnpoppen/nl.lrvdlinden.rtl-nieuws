@@ -1,0 +1,23 @@
+{
+  "name": "nl.lrvdlinden.rtl-nieuws",
+  "version": "0.0.1",
+  "description": "Up-to-date RTL nieuws in The Netherlands.",
+  "author": "homey@vdlinden.xyz",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrvdlinden/nl.lrvdlinden.rtl-nieuws"
+  },
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.0",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.4",
+    "@types/node": "^20.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-athom": "^3.1.1",
+    "rss-parser": "^3.13.0"
+  }
+}
