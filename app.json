@@ -17,8 +17,8 @@
     "small": "/assets/images/small.jpg"
   },
   "description": {
-    "en": "Receive notifications for new articles from RTL Nieuws RSS feed.",
-    "nl": "Ontvang meldingen voor nieuwe artikelen van RTL Nieuws RSS-feed."
+    "en": "Receive notifications for new articles from RTL Nieuws.",
+    "nl": "Ontvang meldingen voor nieuwe artikelen van RTL Nieuws."
   },
   "permissions": [],
   "author": {
