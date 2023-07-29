@@ -12,10 +12,9 @@
   
 
 ## General
-This app gives Homey the ability to respond to messages of the Dutch P2000 network.
+This app gives Homey the ability to respond to messages of the Dutch News sender RTL Nieuws.
 Keep in mind that all messages send on this network are in Dutch.
 
-- Basic search abilities (capcode, town, region, etc.)
 - Use in flow to trigger anything, e.g. speech so Homey tells you what is happening
 
 ---
@@ -53,8 +52,9 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ![4563420f44fe0d58fa7ab8b884941de1b46a3e95_2_546x750](https://github.com/LRvdLinden/nl.lrvdlinden.p2000/assets/77990847/9aec40bb-53c8-4cbb-bb78-d39d3fa94b9e)
 
-
 ---
+## Changelog
+
 - 0.0.1 (29 jul 2023) Initianal Release
 <details>
 <summary>More changelog</summary>
