@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://homey.app/nl-nl/apps/author/5d4da77a2c836a50f6936070/page/0/">
-    <img src="https://www.hardnieuws.nl/assets/beeldbank/1024/20220802114763.jpg?quality=80&format=webply&width=690" />
+    <img src="https://screenshots.rtl.nl/system/thumb/sz=355x200/uuid=f761217f-be59-4e9d-a94f-2741ff3740fe" />
   </a>
 </p>
 
