@@ -48,18 +48,12 @@
     "email": "homey@vdlinden.xyz"
   },
   "contributors": {
-    "developers": [
-      {
-        "name": "Léon van der Linden",
-        "email": "homey@vdlinden.xyz"
-      }
-    ],
     "translators": [
       {
-        "name": "🇬🇧 Léon van der Linden"
+        "name": "🇬🇧 Léon"
       },
       {
-        "name": "🇳🇱 Léon van der Linden"
+        "name": "🇳🇱 Léon"
       }
     ]
   },
