@@ -20,6 +20,28 @@
     "en": "Receive notifications for new articles from RTL Nieuws.",
     "nl": "Ontvang meldingen voor nieuwe artikelen van RTL Nieuws."
   },
+    "category": "internet",
+  "class": "rss",
+  "tags": {
+    "en": [
+      "internet",
+      "news",
+      "nos",
+      "nu.nl",
+      "rss"
+    ],
+    "nl": [
+      "internet",
+      "nieuws",
+      "nos",
+      "nu.nl",
+      "rss"
+    ]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl"
+  },
   "permissions": [],
   "author": {
     "name": "Léon van der Linden",
@@ -58,28 +80,6 @@
   "homepage": "https://shor.by/LRvdLinden",
   "support": "https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742",
   "homeyCommunityTopicId": 83742,
-  "category": "internet",
-  "class": "rss",
-  "tags": {
-    "en": [
-      "internet",
-      "news",
-      "nos",
-      "nu.nl",
-      "rss"
-    ],
-    "nl": [
-      "internet",
-      "nieuws",
-      "nos",
-      "nu.nl",
-      "rss"
-    ]
-  },
-  "language": {
-    "en": "en",
-    "nl": "nl"
-  },
   "flow": {
     "triggers": [
       {
