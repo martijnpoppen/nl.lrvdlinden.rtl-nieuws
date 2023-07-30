@@ -24,7 +24,7 @@ Keep in mind that all messages send on this network are in Dutch.
 
 |Branch|Live Version|Status|Note| Test Version |
 | --- | --- | --- | --- | --- |
-|Homey Pro|**[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|In development| **[1.0.0](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
+|Homey Pro|**[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|In development| **[1.0.2](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
 
 
 ---
@@ -52,13 +52,16 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ---
 ## Changelog
-- 1.0.0 (31 jul 2023) First Release
+- 1.0.2 (1 aug 2023) Translation to all supported Homey languages
+
 
 <details>
 <summary>More changelog</summary>
 
 <br><br>
 <pre>
+- 1.0.1 (31 jul 2023) First Release
+- 1.0.0 (31 jul 2023) First Release
 - 0.0.6 TEST (29 jul 2023) Feed improvements by @martijnpoppen
 - 0.0.5 TEST (29 jul 2023) Prepairing documents
 - 0.0.4 (29 jul 2023) Feed improvements by @martijnpoppen
@@ -89,7 +92,7 @@ or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdli
 | 💬 | [Signal](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/test/) | [1.0.2](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/) | [2.0.0](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/test/) | ✅ | ✅ | [Support](https://community.homey.app/t/app-pro-signal-messenger/83624) |
 | 🚨 | [P2000](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/test/) | [2.0.4](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/) | [3.0.3](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/test/) | ✅ | ✅ | [Support](https://community.homey.app/t/app-pro-p2000/83738) |
 | 🚁 | [Lifeliner](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/test/) |[1.1.1](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/) | [2.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/test/) |✅ | ✅ | [Support](https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742) |
-| 📰 | [RTL Nieuws](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) | [1.0.0](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |✅ | ❌ | [Support](https://community.homey.app/t/app-pro-rtl-nieuws-for-homey/85531) |
+| 📰 | [RTL Nieuws](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |[1.0.1](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) | [1.0.2](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |✅ | ❌ | [Support](https://community.homey.app/t/app-pro-rtl-nieuws-for-homey/85531) |
 
 #### ⚠️ Cloud apps only available via test versions. Awaiting approval from Athom for Cloud release. 
 ---
