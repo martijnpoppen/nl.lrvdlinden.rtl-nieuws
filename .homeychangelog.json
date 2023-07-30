@@ -1,0 +1,14 @@
+{
+  "0.0.1": {
+    "en": "Initial Release",
+    "nl": "Eerste release"
+  },
+  "0.0.2": {
+    "en": "Bug fix",
+    "nl": "Kleine verbeteringen"
+  },
+  "0.0.3": {
+    "en": "Trigger card translation",
+    "nl": "Trigger kaart vertaling"
+  }
+}
