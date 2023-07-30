@@ -51,7 +51,8 @@
     "developers": [
       {
         "name": "Martijn Poppen"
-      },
+      }
+    ],
     "translators": [
       {
         "name": "🇬🇧 Léon"
@@ -97,14 +98,6 @@
             "title": {
               "en": "Article Title",
               "nl": "Artikel Titel"
-            },
-            "type": "string"
-          },
-          {
-            "name": "article_text",
-            "title": {
-              "en": "Article Text",
-              "nl": "Artikel Tekst"
             },
             "type": "string"
           },
