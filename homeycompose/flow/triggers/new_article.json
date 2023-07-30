@@ -47,76 +47,68 @@
     {
       "name": "link",
       "title": {
-        "title": {
-          "en": "Article URL",
-          "nl": "Artikel URL",
-          "de": "Artikel-URL",
-          "fr": "URL de l'article",
-          "it": "URL dell'articolo",
-          "sv": "Artikel-URL",
-          "no": "Artikkel-URL",
-          "es": "URL del artículo",
-          "da": "Artikel-URL",
-          "ru": "URL статьи",
-          "pl": "URL artykułu"
-        }
+        "en": "Article URL",
+        "nl": "Artikel URL",
+        "de": "Artikel-URL",
+        "fr": "URL de l'article",
+        "it": "URL dell'articolo",
+        "sv": "Artikel-URL",
+        "no": "Artikkel-URL",
+        "es": "URL del artículo",
+        "da": "Artikel-URL",
+        "ru": "URL статьи",
+        "pl": "URL artykułu"
       },
       "type": "string"
     },
     {
       "name": "content",
       "title": {
-        "title": {
-          "en": "Article Description",
-          "nl": "Artikel Omschrijving",
-          "de": "Artikelbeschreibung",
-          "fr": "Description de l'article",
-          "it": "Descrizione dell'articolo",
-          "sv": "Artikelbeskrivning",
-          "no": "Artikkelbeskrivelse",
-          "es": "Descripción del artículo",
-          "da": "Artikelbeskrivelse",
-          "ru": "Описание статьи",
-          "pl": "Opis artykułu"
-        }
+        "en": "Article Description",
+        "nl": "Artikel Omschrijving",
+        "de": "Artikelbeschreibung",
+        "fr": "Description de l'article",
+        "it": "Descrizione dell'articolo",
+        "sv": "Artikelbeskrivning",
+        "no": "Artikkelbeskrivelse",
+        "es": "Descripción del artículo",
+        "da": "Artikelbeskrivelse",
+        "ru": "Описание статьи",
+        "pl": "Opis artykułu"
       },
       "type": "string"
     },
     {
       "name": "pubDate",
       "title": {
-        "title": {
-          "en": "Article Publication Date",
-          "nl": "Artikel Publicatiedatum",
-          "de": "Artikel Veröffentlichungsdatum",
-          "fr": "Date de publication de l'article",
-          "it": "Data di pubblicazione dell'articolo",
-          "sv": "Artikel Publiceringsdatum",
-          "no": "Artikkel Publikasjonsdato",
-          "es": "Fecha de publicación del artículo",
-          "da": "Artikel Udgivelsesdato",
-          "ru": "Дата публикации статьи",
-          "pl": "Data publikacji artykułu"
-        }
+        "en": "Article Publication Date",
+        "nl": "Artikel Publicatiedatum",
+        "de": "Artikel Veröffentlichungsdatum",
+        "fr": "Date de publication de l'article",
+        "it": "Data di pubblicazione dell'articolo",
+        "sv": "Artikel Publiceringsdatum",
+        "no": "Artikkel Publikasjonsdato",
+        "es": "Fecha de publicación del artículo",
+        "da": "Artikel Udgivelsesdato",
+        "ru": "Дата публикации статьи",
+        "pl": "Data publikacji artykułu"
       },
       "type": "string"
     },
     {
       "name": "imageUrl",
       "title": {
-        "title": {
-          "en": "Article Image URL",
-          "nl": "Artikel Afbeelding URL",
-          "de": "Artikelbild-URL",
-          "fr": "URL de l'image de l'article",
-          "it": "URL dell'immagine dell'articolo",
-          "sv": "Artikelbild-URL",
-          "no": "Artikkelbilde-URL",
-          "es": "URL de la imagen del artículo",
-          "da": "Artikel Billede URL",
-          "ru": "URL изображения статьи",
-          "pl": "URL obrazu artykułu"
-        }
+        "en": "Article Image URL",
+        "nl": "Artikel Afbeelding URL",
+        "de": "Artikelbild-URL",
+        "fr": "URL de l'image de l'article",
+        "it": "URL dell'immagine dell'articolo",
+        "sv": "Artikelbild-URL",
+        "no": "Artikkelbilde-URL",
+        "es": "URL de la imagen del artículo",
+        "da": "Artikel Billede URL",
+        "ru": "URL изображения статьи",
+        "pl": "URL obrazu artykułu"
       },
       "type": "string"
     }
