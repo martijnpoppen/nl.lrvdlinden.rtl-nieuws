@@ -25,23 +25,21 @@ class RtlNieuwsApp extends Homey.App {
       try {
         const feed = await parser.parseURL(feedUrl);
 
+        if (feed && feed.items && feed.items.length > 0) {
+          // Haal de meest recente nieuwsbericht op
+          const latestItem = feed.items[0];
 
-          if (feed && feed.items && feed.items.length > 0) {
-            // Loop through all the news items
-            for (const item of feed.items) {
-              // Get the relevant information from the news item
-              const title = item.title;
-              const link = item.link;
-              const description = item.description;
-              const pubDate = item.pubDate;
+          // Haal de relevante informatie van het nieuwsbericht op
+          const title = latestItem.title;
+          const text = latestItem.contentSnippet;
+          const url = latestItem.link;
 
-              // Send the information as tokens to the trigger card
-              this.triggerNieuwBericht.trigger({
-                article_title: title,
-                article_link: link,
-                article_description: description,
-                article_pubDate: pubDate,
-              });
+          // Stuur de informatie door als tokens bij de trigger-kaart
+          this.triggerNieuwBericht.trigger({
+            article_title: title,
+            article_text: text,
+            article_url: url,
+          });
 
           this.log(`Nieuw bericht: ${title}`);
         }
