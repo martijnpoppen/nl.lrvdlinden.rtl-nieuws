@@ -22,5 +22,9 @@
   "0.0.6": {
     "en": "Feed improvements by @martijnpoppen",
     "nl": "Feed verbeteringen door @martijnpoppen"  
+  },
+  "1.0.0": {
+    "en": "First Release",
+    "nl": "Eerste Release"  
   }
 }
