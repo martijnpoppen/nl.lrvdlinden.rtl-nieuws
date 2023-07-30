@@ -1,4 +1,4 @@
-'use strict';
+
 const Homey = require('homey');
 const Parser = require('rss-parser'); // Zorg ervoor dat je deze bibliotheek hebt geïnstalleerd via npm
 
