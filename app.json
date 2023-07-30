@@ -112,6 +112,22 @@
               "nl": "Artikel URL"
             },
             "type": "string"
+          },
+          {
+            "name": "article_description",
+            "title": {
+              "en": "Article Description",
+              "nl": "Artikel Omschrijving"
+            },
+            "type": "string"
+          },
+          {
+            "name": "article_pubDate",
+            "title": {
+              "en": "Article Publication Date",
+              "nl": "Artikel Publicatiedatum"
+            },
+            "type": "string"
           }
         ]
       }
