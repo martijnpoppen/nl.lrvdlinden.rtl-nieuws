@@ -20,14 +20,6 @@
       "type": "string"
     },
     {
-      "name": "article_text",
-      "title": {
-        "en": "Article Text",
-        "nl": "Artikel Tekst"
-      },
-      "type": "string"
-    },
-    {
       "name": "article_url",
       "title": {
         "en": "Article URL",
