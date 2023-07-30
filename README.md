@@ -48,7 +48,7 @@ Keep in mind that all messages send on this network are in Dutch.
 ---
 
 ## Example Flow
-
+[![Flow](https://flow-api.athom.com/api/flow/m9p7DC/image)](https://homey.app/f/m9p7DC/)
 
 ---
 ## Changelog
