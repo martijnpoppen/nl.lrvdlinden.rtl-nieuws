@@ -56,12 +56,12 @@ Keep in mind that all messages send on this network are in Dutch.
 - 0.0.4 TEST (29 jul 2023) Feed improvements by @martijnpoppen
 <details>
 <summary>More changelog</summary>
+
+<br><br>
+<pre>
 - 0.0.3 (29 jul 2023) Trigger card translation
 - 0.0.2 (29 jul 2023) Bug fix
 - 0.0.1 (29 jul 2023) Initianal Release
-<br><br>
-<pre>
-
 </pre>
 </details>
 
