@@ -10,5 +10,9 @@
   "0.0.3": {
     "en": "Trigger card translation",
     "nl": "Trigger kaart vertaling"
+  },
+  "0.0.4": {
+    "en": "Feed improvements",
+    "nl": "Feed verbeteringen"
   }
 }
