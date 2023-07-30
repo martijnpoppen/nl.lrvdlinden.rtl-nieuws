@@ -1,0 +1,55 @@
+{
+  "id": "new_article",
+  "title": {
+    "en": "New Article Received",
+    "nl": "Nieuw artikel ontvangen"
+  },
+  "description": {
+    "en": "Triggered when a new article is received from RTL Nieuws RSS feed.",
+    "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van RTL Nieuws RSS-feed."
+  },
+  "service": "news_service",
+  "method": "onNewArticle",
+  "tokens": [
+    {
+      "name": "article_title",
+      "title": {
+        "en": "Article Title",
+        "nl": "Artikel Titel"
+      },
+      "type": "string"
+    },
+    {
+      "name": "article_text",
+      "title": {
+        "en": "Article Text",
+        "nl": "Artikel Tekst"
+      },
+      "type": "string"
+    },
+    {
+      "name": "article_url",
+      "title": {
+        "en": "Article URL",
+        "nl": "Artikel URL"
+      },
+      "type": "string"
+    },
+    {
+      "name": "article_description",
+      "title": {
+        "en": "Article Description",
+        "nl": "Artikel Omschrijving"
+      },
+      "type": "string"
+    },
+    {
+      "name": "article_pubDate",
+      "title": {
+        "en": "Article Publication Date",
+        "nl": "Artikel Publicatiedatum"
+      },
+      "type": "string"
+    }
+  ]
+}
