@@ -14,5 +14,13 @@
   "0.0.4": {
     "en": "Feed improvements",
     "nl": "Feed verbeteringen"
+  },
+  "0.0.5": {
+    "en": "Prepairing all documents",
+    "nl": "Alle documentatie voorbereiden"
+  },
+  "0.0.6": {
+    "en": "Feed improvements by @martijnpoppen",
+    "nl": "Feed verbeteringen door @martijnpoppen"  
   }
 }

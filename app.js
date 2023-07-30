@@ -38,16 +38,18 @@ class RtlNieuwsApp extends Homey.App {
                     const latestItem = feed.items[0];
 
                     // Haal de relevante informatie van het nieuwsbericht op
-                    const title = latestItem.title;
-                    const text = latestItem.contentSnippet;
-                    const url = latestItem.link;
+                    const title = item.title;
+                    const link = item.link;
+                    const description = item.description;
+                    const pubDate = item.pubDate;
 
                     // Stuur de informatie door als tokens bij de trigger-kaart
                     this.triggerNewArticle
                         .trigger({
-                            article_title: title,
-                            article_text: text,
-                            article_url: url
+                    article_title: title,
+                    article_link: link,
+                    article_description: description,
+                    article_pubDate: pubDate,
                         })
                         .catch((err) => this.error('Error in triggerNewArticle', err));
 
