@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
   },
-  "depependencies": {
+  "dependencies": {
     "rss-parser": "^3.13.0"
   }
 }
