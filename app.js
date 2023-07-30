@@ -42,7 +42,7 @@ class RtlNieuwsApp extends Homey.App {
 
                 this.log(`[checkRssFeed] - got latestItem:`, latestItem);
                 const { title, link, content, pubDate, enclosure } = latestItem;
-                const { url: imageUrl } = enclosure || {};
+                const imageUrl = enclosure.url || "";
                 const data = {
                     title,
                     link,
