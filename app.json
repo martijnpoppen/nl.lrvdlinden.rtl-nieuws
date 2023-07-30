@@ -20,7 +20,7 @@
     "en": "Receive notifications for new articles from RTL Nieuws.",
     "nl": "Ontvang meldingen voor nieuwe artikelen van RTL Nieuws."
   },
-    "category": "internet",
+  "category": "internet",
   "class": "rss",
   "tags": {
     "en": [
@@ -80,7 +80,8 @@
         "id": "new_article",
         "title": {
           "en": "New Article Received",
-          "nl": "Nieuw artikel ontvangen",
+          "nl": "Nieuw artikel ontvangen"
+        },
         "description": {
           "en": "Triggered when a new article is received from RTL Nieuws RSS feed.",
           "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van RTL Nieuws RSS-feed."
@@ -114,4 +115,6 @@
           }
         ]
       }
+    ]
   }
+}
