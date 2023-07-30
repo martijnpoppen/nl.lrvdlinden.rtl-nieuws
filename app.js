@@ -1,6 +1,6 @@
 'use strict';
 const Homey = require('homey');
-const Parser = require('rss-parser'); // Zorg ervoor dat je deze bibliotheek hebt geïnstalleerd via npm
+const Parser = require('rss-parser');
 
 class RtlNieuwsApp extends Homey.App {
     log() {
@@ -16,49 +16,46 @@ class RtlNieuwsApp extends Homey.App {
     onInit() {
         this.log(`[onInit] ${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
 
-        // Register flow Trigger
         this.triggerNewArticle = this.homey.flow.getTriggerCard('new_article');
+        this.checkInterval = 5 * 60 * 1000; // 5 minutes
+        this.parser = new Parser();
+        this.feedUrl = 'https://www.rtlnieuws.nl/rss.xml';
 
-        // Definieer het interval om de RSS-feed te controleren (bijvoorbeeld elke 5 minuten)
-        this.checkInterval = 5 * 60 * 1000; // 5 minuten in milliseconden
+        setInterval(async () => {
+            this.checkRssFeed();
+        }, this.checkInterval);
 
         this.checkRssFeed();
     }
 
     async checkRssFeed() {
-        const parser = new Parser();
-        const feedUrl = 'https://www.rtlnieuws.nl/rss.xml';
+        try {
+            const feed = await this.parser.parseURL(this.feedUrl);
 
-        setInterval(async () => {
-            try {
-                const feed = await parser.parseURL(feedUrl);
+            if (feed && feed.items && feed.items.length) {
+                let [latestItem] = feed.items;
 
-                if (feed && feed.items && feed.items.length > 0) {
-                    // Haal de meest recente nieuwsbericht op
-                    const latestItem = feed.items[0];
-
-                    // Haal de relevante informatie van het nieuwsbericht op
-                    const title = item.title;
-                    const link = item.link;
-                    const description = item.description;
-                    const pubDate = item.pubDate;
-
-                    // Stuur de informatie door als tokens bij de trigger-kaart
-                    this.triggerNewArticle
-                        .trigger({
-                    article_title: title,
-                    article_link: link,
-                    article_description: description,
-                    article_pubDate: pubDate,
-                        })
-                        .catch((err) => this.error('Error in triggerNewArticle', err));
-
-                    this.log(`Nieuw bericht: ${title}`);
+                if (latestItem.title && (latestItem.title.includes('RTL Nieuws') || latestItem.title.includes('RTL Weer'))) {
+                    this.log(`[checkRssFeed] - skip latestItem due to containing RTL in title:`, latestItem.title);
+                    [, latestItem] = feed.items;
                 }
-            } catch (err) {
-                this.error(`Error in retrieving RSS-feed:`, err);
+
+                this.log(`[checkRssFeed] - got latestItem:`, latestItem);
+                const { title, link, content, pubDate } = latestItem;
+                const data = {
+                    title,
+                    link,
+                    content,
+                    pubDate
+                };
+
+                this.log(`[checkRssFeed] - trigger new article Data:`, data);
+
+                this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
             }
-        }, this.checkInterval);
+        } catch (err) {
+            this.error(`[checkRssFeed] - Error in retrieving RSS-feed:`, err);
+        }
     }
 }
 

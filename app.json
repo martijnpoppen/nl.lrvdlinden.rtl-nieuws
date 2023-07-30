@@ -94,7 +94,7 @@
         "method": "onNewArticle",
         "tokens": [
           {
-            "name": "article_title",
+            "name": "title",
             "title": {
               "en": "Article Title",
               "nl": "Artikel Titel"
@@ -102,7 +102,7 @@
             "type": "string"
           },
           {
-            "name": "article_url",
+            "name": "link",
             "title": {
               "en": "Article URL",
               "nl": "Artikel URL"
@@ -110,7 +110,7 @@
             "type": "string"
           },
           {
-            "name": "article_description",
+            "name": "content",
             "title": {
               "en": "Article Description",
               "nl": "Artikel Omschrijving"
@@ -118,7 +118,7 @@
             "type": "string"
           },
           {
-            "name": "article_pubDate",
+            "name": "pubDate",
             "title": {
               "en": "Article Publication Date",
               "nl": "Artikel Publicatiedatum"
