@@ -41,14 +41,16 @@ class RtlNieuwsApp extends Homey.App {
                 }
 
                 this.log(`[checkRssFeed] - got latestItem:`, latestItem);
-                const { title, link, content, pubDate } = latestItem;
+                const { title, link, content, pubDate, enclosure } = latestItem;
+                const { url: imageUrl } = enclosure || {};
                 const data = {
                     title,
                     link,
                     content,
-                    pubDate
+                    pubDate,
+                    imageUrl
                 };
-
+                
                 this.log(`[checkRssFeed] - trigger new article Data:`, data);
 
                 this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
