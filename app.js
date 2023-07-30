@@ -3,51 +3,61 @@ const Homey = require('homey');
 const Parser = require('rss-parser'); // Zorg ervoor dat je deze bibliotheek hebt geïnstalleerd via npm
 
 class RtlNieuwsApp extends Homey.App {
-  async onInit() {
-    this.log('RTL Nieuws app is gestart');
+    log() {
+        console.log.bind(this, '[log]').apply(this, arguments);
+    }
 
-    // Registreer de trigger-kaart
-    this.triggerNieuwBericht = new Homey.FlowCardTrigger('nieuw_bericht')
-      .register();
+    error() {
+        console.error.bind(this, '[error]').apply(this, arguments);
+    }
 
-    // Definieer het interval om de RSS-feed te controleren (bijvoorbeeld elke 5 minuten)
-    const checkInterval = 5 * 60 * 1000; // 5 minuten in milliseconden
+    // -------------------- INIT ----------------------
 
-    // Start het interval om de RSS-feed te controleren
-    this.checkRssFeed(checkInterval);
-  }
+    onInit() {
+        this.log(`[onInit] ${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
 
-  async checkRssFeed(interval) {
-    const parser = new Parser();
-    const feedUrl = 'https://www.rtlnieuws.nl/rss.xml';
+        // Register flow Trigger
+        this.triggerNewArticle = this.homey.flow.getTriggerCard('new_article');
 
-    setInterval(async () => {
-      try {
-        const feed = await parser.parseURL(feedUrl);
+        // Definieer het interval om de RSS-feed te controleren (bijvoorbeeld elke 5 minuten)
+        this.checkInterval = 5 * 60 * 1000; // 5 minuten in milliseconden
 
-        if (feed && feed.items && feed.items.length > 0) {
-          // Haal de meest recente nieuwsbericht op
-          const latestItem = feed.items[0];
+        this.checkRssFeed();
+    }
 
-          // Haal de relevante informatie van het nieuwsbericht op
-          const title = latestItem.title;
-          const text = latestItem.contentSnippet;
-          const url = latestItem.link;
+    async checkRssFeed() {
+        const parser = new Parser();
+        const feedUrl = 'https://www.rtlnieuws.nl/rss.xml';
 
-          // Stuur de informatie door als tokens bij de trigger-kaart
-          this.triggerNieuwBericht.trigger({
-            article_title: title,
-            article_text: text,
-            article_url: url,
-          });
+        setInterval(async () => {
+            try {
+                const feed = await parser.parseURL(feedUrl);
 
-          this.log(`Nieuw bericht: ${title}`);
-        }
-      } catch (error) {
-        this.error(`Fout bij ophalen van RSS-feed: ${error}`);
-      }
-    }, interval);
-  }
+                if (feed && feed.items && feed.items.length > 0) {
+                    // Haal de meest recente nieuwsbericht op
+                    const latestItem = feed.items[0];
+
+                    // Haal de relevante informatie van het nieuwsbericht op
+                    const title = latestItem.title;
+                    const text = latestItem.contentSnippet;
+                    const url = latestItem.link;
+
+                    // Stuur de informatie door als tokens bij de trigger-kaart
+                    this.triggerNewArticle
+                        .trigger({
+                            article_title: title,
+                            article_text: text,
+                            article_url: url
+                        })
+                        .catch((err) => this.error('Error in triggerNewArticle', err));
+
+                    this.log(`Nieuw bericht: ${title}`);
+                }
+            } catch (err) {
+                this.error(`Error in retrieving RSS-feed:`, err);
+            }
+        }, this.checkInterval);
+    }
 }
 
 module.exports = RtlNieuwsApp;
