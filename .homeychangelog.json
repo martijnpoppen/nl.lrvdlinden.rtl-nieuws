@@ -26,5 +26,13 @@
   "1.0.0": {
     "en": "First Release",
     "nl": "Eerste Release"  
+  },
+  "1.0.1": {
+    "en": "First Release",
+    "nl": "Eerste Release"  
+  },
+  "1.0.2": {
+    "en": "Translation to all supported Homey languages",
+    "nl": "Vertaling naar alle ondersteunde talen van Homey" 
   }
 }
