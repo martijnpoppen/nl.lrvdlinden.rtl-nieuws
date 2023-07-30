@@ -82,8 +82,8 @@
           "nl": "Nieuw artikel ontvangen"
         },
         "description": {
-          "en": "Triggered when a new article is received from RTL Nieuws RSS feed.",
-          "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van RTL Nieuws RSS-feed."
+          "en": "Triggered when a new article is received from RTL Nieuws.",
+          "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van RTL Nieuws."
         },
         "service": "news_service",
         "method": "onNewArticle",
