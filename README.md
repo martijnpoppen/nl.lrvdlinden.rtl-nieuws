@@ -50,10 +50,9 @@ Keep in mind that all messages send on this network are in Dutch.
 ## Example Flow
 
 
-![4563420f44fe0d58fa7ab8b884941de1b46a3e95_2_546x750](https://github.com/LRvdLinden/nl.lrvdlinden.p2000/assets/77990847/9aec40bb-53c8-4cbb-bb78-d39d3fa94b9e)
-
 ---
 ## Changelog
+- 0.0.5 Preparing all documents
 - 0.0.4 TEST (29 jul 2023) Feed improvements by @martijnpoppen
 <details>
 <summary>More changelog</summary>
@@ -70,11 +69,12 @@ Keep in mind that all messages send on this network are in Dutch.
 ---
   
 
-## Contributions
+## Contributions 
 
-If you appreciate this app, contribute to future development by making a [paypal contribution ](https://www.paypal.me/lrvdlinden)
+If you appreciate this apps, contribute to future development by making a [paypal contribution ](https://www.paypal.me/lrvdlinden)
 or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdlinden_homey#checkoutModal) or [Bunq.me ](https://bunq.me/lrvdlinden)
 
+[![image|150x84](upload://5Rtagdo7TObzh9u8haIuXaXBJbc) ](https://paypal.me/lrvdlinden) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg) ](https://ko-fi.com/lrvdlinden_homey#checkoutModal)[![image|172x90](upload://iSgqkM7Zaw5s5hwVVnAqXNDQLG9) ](https://bunq.me/lrvdlinden)
 
 
 ---
@@ -86,6 +86,8 @@ or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdli
 | 💬 | [Signal](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/test/) | [1.0.2](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/) | [2.0.0](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/test/) | ✅ | ✅ | [Support](https://community.homey.app/t/app-pro-signal-messenger/83624) |
 | 🚨 | [P2000](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/test/) | [2.0.4](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/) | [3.0.3](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/test/) | ✅ | ✅ | [Support](https://community.homey.app/t/app-pro-p2000/83738) |
 | 🚁 | [Lifeliner](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/test/) |[1.1.1](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/) | [2.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/test/) |✅ | ✅ | [Support](https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742) |
-| 📰 | [RTL Nieuws](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) | [0.0.4](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |✅ | ❌ | [Support](https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742) |
-#### ⚠️ Test apps only available via test versions
+| 📰 | [RTL Nieuws](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) | [0.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test) |✅ | ❌ | [Support](https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742) |
+
+#### ⚠️ Cloud apps only available via test versions. Awaiting approval from Athom for Cloud release. 
 ---
+
