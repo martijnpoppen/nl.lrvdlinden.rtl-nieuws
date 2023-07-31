@@ -21,6 +21,8 @@ class RtlNieuwsApp extends Homey.App {
         this.parser = new Parser();
         this.feedUrl = 'https://www.rtlnieuws.nl/rss.xml';
 
+        this.lastTriggeredPubDate = null; // Variable to store the last triggered article's pubDate
+
         setInterval(async () => {
             this.checkRssFeed();
         }, this.checkInterval);
@@ -50,10 +52,17 @@ class RtlNieuwsApp extends Homey.App {
                     pubDate,
                     imageUrl
                 };
-                
-                this.log(`[checkRssFeed] - trigger new article Data:`, data);
 
-                this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
+                // Check if the new article has a different pubDate from the last triggered article
+                if (pubDate !== this.lastTriggeredPubDate) {
+                    this.log(`[checkRssFeed] - trigger new article Data:`, data);
+                    this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
+
+                    // Update the lastTriggeredPubDate with the current pubDate
+                    this.lastTriggeredPubDate = pubDate;
+                } else {
+                    this.log(`[checkRssFeed] - Article already triggered, skipping...`);
+                }
             }
         } catch (err) {
             this.error(`[checkRssFeed] - Error in retrieving RSS-feed:`, err);
