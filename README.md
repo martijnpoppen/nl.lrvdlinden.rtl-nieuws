@@ -85,6 +85,6 @@ or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdli
 ## 💻 Apps made by @LRvdLinden
 ---
 
-See for more apps link below 👇🏻
+<p>See for more apps link below 👇🏻</p>
 https://community.homey.app/t/apps-made-by-lrvdlinden/85452
 
