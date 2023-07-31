@@ -22,5 +22,33 @@
   "0.0.6": {
     "en": "Feed improvements by @martijnpoppen",
     "nl": "Feed verbeteringen door @martijnpoppen"  
+  },
+  "1.0.0": {
+    "en": "First Release",
+    "nl": "Eerste Release"  
+  },
+  "1.0.1": {
+    "en": "First Release",
+    "nl": "Eerste Release"  
+  },
+  "1.0.2": {
+    "en": "Translation to all supported Homey languages",
+    "nl": "Vertaling naar alle ondersteunde talen van Homey" 
+    },
+  "1.0.4": {
+    "en": "Fix flowcard",
+    "nl": "Fix flowcard" 
+    },
+  "1.0.5": {
+    "en": "Control built in to prevent an item from being triggered multiple times",
+    "nl": "Controle ingebouwd om te voorkomen dat een artikel meerdere keren wordt getriggert" 
+    },
+  "1.0.6": {
+    "en": "Two new trigger cards. One for RTL Nieuws video and one for RTL Weer video",
+    "nl": "Twee nieuwe triggerkaarten. Eén voor RTL Nieuws video en één voor RTL Weer video." 
+      },
+  "1.0.7": {
+    "en": "Two new trigger cards, One for RTL Nieuws video and one for RTL Weer video and three new condition cards",
+    "nl": "Twee nieuwe triggerkaarten, één voor RTL Nieuws video en één voor RTL Weer video en daarnaast drie nieuwe conditie kaarten" 
   }
 }
