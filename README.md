@@ -23,7 +23,7 @@ Keep in mind that all messages send on this network are in Dutch.
 
 |Branch|Live Version|Status|Note| Test Version |
 | --- | --- | --- | --- | --- |
-|Homey Pro|**[1.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|In development| **[1.0.7](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
+|Homey Pro|**[1.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|Stable| **[1.0.8](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
 
 
 ---
@@ -52,6 +52,7 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ---
 ## Changelog
+- 1.0.8 (31 jul 2023) Feed improvemend
 - 1.0.7 (31 jul 2023) Two new trigger cards, One for RTL Nieuws video and one for RTL Weer video and three new condition cards.
 
 <details>
