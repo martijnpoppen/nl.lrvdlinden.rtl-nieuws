@@ -97,7 +97,6 @@ class RtlNieuwsApp extends Homey.App {
                         this.triggerNewVideoWeer.trigger({ url: latestItem.link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoWeer', err));
                     }
                 }
-            }
         } catch (err) {
             this.error(`[checkRssFeed] - Error in retrieving RSS-feed:`, err);
         }
