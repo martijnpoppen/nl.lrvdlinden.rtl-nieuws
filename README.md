@@ -36,6 +36,7 @@ Keep in mind that all messages send on this network are in Dutch.
 ## Current features: 🔧
 
 - [x] Realtime notifications (don't forget to created a flow)
+- [X] Get RTL Nieuws and RTL Weer video URL, to play on a tv or other smart device
 
 ---
 
@@ -51,11 +52,12 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ---
 ## Changelog
-- 1.0.5 (31 jul 2023) Control built in to prevent an item from being triggered multiple times
+- 1.0.6 (31 jul 2023) Two new trigger cards. One for RTL Nieuws video and one for RTL Weer video
 <details>
 <summary>More changelog</summary>
 <br><br>
 <pre>
+- 1.0.5 (31 jul 2023) Control built in to prevent an item from being triggered multiple times
 - 1.0.4 (30 jul 2023) Fix flowcard
 - 1.0.2 (30 jul 2023) Translation to all supported Homey languages
 - 1.0.1 (30 jul 2023) First Release
