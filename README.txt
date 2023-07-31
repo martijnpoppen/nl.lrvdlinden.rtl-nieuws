@@ -10,6 +10,7 @@ Usage ⚙
 
 Current features: 🔧
 - [x] Realtime notifications (don't forget to created a flow)
+- [x] Get RTL News and RTL Weather video url, to play it on a TV or other device
 
 Supported Languages:netherlands:
 - 🇳🇱 Dutch
