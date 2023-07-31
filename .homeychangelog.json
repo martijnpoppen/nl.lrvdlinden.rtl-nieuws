@@ -46,5 +46,9 @@
   "1.0.6": {
     "en": "Two new trigger cards. One for RTL Nieuws video and one for RTL Weer video",
     "nl": "Twee nieuwe triggerkaarten. Eén voor RTL Nieuws video en één voor RTL Weer video." 
+      },
+  "1.0.7": {
+    "en": "Two new trigger cards, One for RTL Nieuws video and one for RTL Weer video and three new condition cards",
+    "nl": "Twee nieuwe triggerkaarten, één voor RTL Nieuws video en één voor RTL Weer video en daarnaast drie nieuwe conditie kaarten" 
   }
 }
