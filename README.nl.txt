@@ -9,6 +9,7 @@ Gebruik ⚙
 
 Huidige functies: 🔧
 - [x] Realtime meldingen (vergeet niet om een stroom aan te maken)
+- [x] Ontvang RTL Nieuws en RTL Weer video url, om het op een tv of ander device af te spelen
 
 Ondersteunde talen: nederland:
 - 🇳🇱 Nederlands
