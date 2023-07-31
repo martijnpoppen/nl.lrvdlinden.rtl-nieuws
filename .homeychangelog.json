@@ -50,5 +50,9 @@
   "1.0.7": {
     "en": "Two new trigger cards, One for RTL Nieuws video and one for RTL Weer video and three new condition cards",
     "nl": "Twee nieuwe triggerkaarten, één voor RTL Nieuws video en één voor RTL Weer video en daarnaast drie nieuwe conditie kaarten" 
+  },
+  "1.0.8": {
+    "en": "Feed improvemend",
+    "nl": "Feed verbetering" 
   }
 }
