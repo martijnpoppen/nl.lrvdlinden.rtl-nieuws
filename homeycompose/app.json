@@ -3,9 +3,7 @@
   "version": "1.0.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
-  "platforms": [
-    "local"
-  ],
+  "platforms": ["local"],
   "brandColor": "#35a7d6",
   "name": {
     "en": "RTL Nieuws",
@@ -22,20 +20,8 @@
   "category": "internet",
   "class": "rss",
   "tags": {
-    "en": [
-      "internet",
-      "news",
-      "nos",
-      "nu.nl",
-      "rss"
-    ],
-    "nl": [
-      "internet",
-      "nieuws",
-      "nos",
-      "nu.nl",
-      "rss"
-    ]
+    "en": ["internet", "news", "nos", "nu.nl", "rss"],
+    "nl": ["internet", "nieuws", "nos", "nu.nl", "rss"]
   },
   "language": {
     "en": "en",
