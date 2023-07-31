@@ -15,14 +15,14 @@
     "small": "/assets/images/small.jpg"
   },
   "description": {
-    "en": "Receive notifications for new articles from RTL Nieuws.",
-    "nl": "Ontvang meldingen voor nieuwe artikelen van RTL Nieuws."
+    "en": "Receive notifications for new articles, new RTL Nieuws video and new RTL Weather Video from RTL Nieuws.",
+    "nl": "Ontvang meldingen voor nieuwe artikelen, nieuw RTL Nieuws video en nieuw RTL Weer video van RTL Nieuws."
   },
   "category": "internet",
   "class": "rss",
   "tags": {
-    "en": ["internet", "news", "nos", "nu.nl", "rss"],
-    "nl": ["internet", "nieuws", "nos", "nu.nl", "rss"]
+    "en": ["internet", "news", "nos", "nu.nl", "rss", "weather"],
+    "nl": ["internet", "nieuws", "nos", "nu.nl", "rss", "weer"]
   },
   "language": {
     "en": "en",
