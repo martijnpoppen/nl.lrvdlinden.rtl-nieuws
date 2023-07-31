@@ -38,5 +38,9 @@
   "1.0.4": {
     "en": "Fix flowcard",
     "nl": "Fix flowcard" 
+    },
+  "1.0.5": {
+    "en": "Control built in to prevent an item from being triggered multiple times",
+    "nl": "Controle ingebouwd om te voorkomen dat een artikel meerdere keren wordt getriggert" 
   }
 }
