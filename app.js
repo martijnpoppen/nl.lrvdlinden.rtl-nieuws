@@ -62,16 +62,17 @@ class RtlNieuwsApp extends Homey.App {
                 
                 this.log(`[checkRssFeed] - trigger new article Data:`, data);
 
-                // Check if the latest item is from RTL Nieuws or RTL Weer
-                if (latestItem.title.includes('RTL Nieuws') || latestItem.title.includes('RTL Weer')) {
-                    // Controleer of de link al eerder is ontvangen
-                    if (!this.receivedArticleLink || this.receivedArticleLink !== latestItem.link) {
-                        // Update de link met het laatste ontvangen artikel
-                        this.receivedArticleLink = latestItem.link;
+                // Check if the new article has a different pubDate from the last triggered article
+                if (pubDate !== this.lastTriggeredPubDate) {
+                    this.log(`[checkRssFeed] - trigger new article Data:`, data);
+                    this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
 
-                        this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
-                    }
+                    // Update the lastTriggeredPubDate with the current pubDate
+                    this.lastTriggeredPubDate = pubDate;
+                } else {
+                    this.log(`[checkRssFeed] - Article already triggered, skipping...`);
                 }
+            }
 
                 // Check if the latest item is from RTL Nieuws
                 if (latestItem.title.includes('RTL Nieuws')) {
