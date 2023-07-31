@@ -51,19 +51,18 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ---
 ## Changelog
-- 1.0.2 (1 aug 2023) Translation to all supported Homey languages
-
-
+- 1.0.5 (31 jul 2023) Control built in to prevent an item from being triggered multiple times
 <details>
 <summary>More changelog</summary>
-
 <br><br>
 <pre>
-- 1.0.1 (31 jul 2023) First Release
-- 1.0.0 (31 jul 2023) First Release
+- 1.0.4 (30 jul 2023) Fix flowcard
+- 1.0.2 (30 jul 2023) Translation to all supported Homey languages
+- 1.0.1 (30 jul 2023) First Release
+- 1.0.0 (30 jul 2023) First Release
 - 0.0.6 TEST (29 jul 2023) Feed improvements by @martijnpoppen
-- 0.0.5 TEST (29 jul 2023) Prepairing documents
-- 0.0.4 (29 jul 2023) Feed improvements by @martijnpoppen
+- 0.0.5 TEST (29 jul 2023) Preparing all documents
+- 0.0.4 TEST (29 jul 2023) Feed improvements by @martijnpoppen
 - 0.0.3 (29 jul 2023) Trigger card translation
 - 0.0.2 (29 jul 2023) Bug fix
 - 0.0.1 (29 jul 2023) Initianal Release
