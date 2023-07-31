@@ -1,4 +1,3 @@
-v
 <h1 align="center">RTL Nieuws for Homey</h1>
 
 <p align="center">
