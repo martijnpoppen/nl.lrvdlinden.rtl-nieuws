@@ -23,7 +23,7 @@ Keep in mind that all messages send on this network are in Dutch.
 
 |Branch|Live Version|Status|Note| Test Version |
 | --- | --- | --- | --- | --- |
-|Homey Pro|**[1.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|In development| **[1.0.6](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
+|Homey Pro|**[1.0.5](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|In development| **[1.0.7](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
 
 
 ---
@@ -52,11 +52,13 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ---
 ## Changelog
-- 1.0.6 (31 jul 2023) Two new trigger cards. One for RTL Nieuws video and one for RTL Weer video
+- 1.0.7 (31 jul 2023) Two new trigger cards, One for RTL Nieuws video and one for RTL Weer video and three new condition cards.
+
 <details>
 <summary>More changelog</summary>
 <br><br>
 <pre>
+- 1.0.6 (31 jul 2023) Two new trigger cards. One for RTL Nieuws video and one for RTL Weer video
 - 1.0.5 (31 jul 2023) Control built in to prevent an item from being triggered multiple times
 - 1.0.4 (30 jul 2023) Fix flowcard
 - 1.0.2 (30 jul 2023) Translation to all supported Homey languages
