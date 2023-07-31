@@ -34,5 +34,9 @@
   "1.0.2": {
     "en": "Translation to all supported Homey languages",
     "nl": "Vertaling naar alle ondersteunde talen van Homey" 
+    },
+  "1.0.4": {
+    "en": "Fix flowcard",
+    "nl": "Fix flowcard" 
   }
 }
