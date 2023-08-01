@@ -54,5 +54,9 @@
   "1.0.8": {
     "en": "Feed improvemend",
     "nl": "Feed verbetering" 
+  },
+  "1.0.9": {
+    "en": "Added more video tokens and trigger + condistion cards for RTL Z",
+    "nl": "Meer video tokens toegevoegd en nieuwe trigger en conditie kaarten voor RTL Z" 
   }
 }
