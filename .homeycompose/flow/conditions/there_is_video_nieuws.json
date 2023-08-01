@@ -59,7 +59,7 @@
         "ru": "Дата публикации",
         "pl": "Data publikacji"
       },
-      "type": "datetime"
+      "type": "string"
     },
     {
       "name": "title",
