@@ -43,6 +43,57 @@
         "pl": "URL filmu"
       },
       "type": "string"
+    },
+    {
+      "name": "pubDate",
+      "title": {
+        "en": "Publication Date",
+        "nl": "Publicatiedatum",
+        "de": "Veröffentlichungsdatum",
+        "fr": "Date de publication",
+        "it": "Data di pubblicazione",
+        "sv": "Publiceringsdatum",
+        "no": "Publiseringsdato",
+        "es": "Fecha de publicación",
+        "da": "Udgivelsesdato",
+        "ru": "Дата публикации",
+        "pl": "Data publikacji"
+      },
+      "type": "datetime"
+    },
+    {
+      "name": "title",
+      "title": {
+        "en": "Video Title",
+        "nl": "Titel van de video",
+        "de": "Videotitel",
+        "fr": "Titre de la vidéo",
+        "it": "Titolo del video",
+        "sv": "Videotitel",
+        "no": "Videotittel",
+        "es": "Título del vídeo",
+        "da": "Videotitel",
+        "ru": "Заголовок видео",
+        "pl": "Tytuł filmu"
+      },
+      "type": "string"
+    },
+    {
+      "name": "content",
+      "title": {
+        "en": "Video Content",
+        "nl": "Inhoud van de video",
+        "de": "Videoinhalt",
+        "fr": "Contenu de la vidéo",
+        "it": "Contenuto del video",
+        "sv": "Videoinnehåll",
+        "no": "Videoinnhold",
+        "es": "Contenido del vídeo",
+        "da": "Videoindhold",
+        "ru": "Содержание видео",
+        "pl": "Zawartość filmu"
+      },
+      "type": "string"
     }
   ]
 }
