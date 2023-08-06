@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.lrvdlinden.rtl-nieuws",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
@@ -13,8 +13,9 @@
     "nl": "RTL Nieuws"
   },
   "images": {
-    "large": "/assets/images/large.jpg",
-    "small": "/assets/images/small.jpg"
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png",
+    "xlarge": "/assets/images/xlarge.png"
   },
   "description": {
     "en": "Receive notifications for new articles, new RTL Nieuws video and new RTL Weather Video from RTL Nieuws.",
@@ -243,6 +244,156 @@
               "pl": "URL filmu"
             },
             "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Publication Date",
+              "nl": "Publicatiedatum",
+              "de": "Veröffentlichungsdatum",
+              "fr": "Date de publication",
+              "it": "Data di pubblicazione",
+              "sv": "Publiceringsdatum",
+              "no": "Publiseringsdato",
+              "es": "Fecha de publicación",
+              "da": "Udgivelsesdato",
+              "ru": "Дата публикации",
+              "pl": "Data publikacji"
+            },
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Titel van de video",
+              "de": "Videotitel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del vídeo",
+              "da": "Videotitel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Video Content",
+              "nl": "Inhoud van de video",
+              "de": "Videoinhalt",
+              "fr": "Contenu de la vidéo",
+              "it": "Contenuto del video",
+              "sv": "Videoinnehåll",
+              "no": "Videoinnhold",
+              "es": "Contenido del vídeo",
+              "da": "Videoindhold",
+              "ru": "Содержание видео",
+              "pl": "Zawartość filmu"
+            },
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "new_video_rtlz",
+        "title": {
+          "en": "New RTL Z video received",
+          "nl": "Nieuwe RTL Z video ontvangen",
+          "de": "Neues RTL Z-Video empfangen",
+          "fr": "Nouvelle vidéo RTL Z reçue",
+          "it": "Nuovo video RTL Z ricevuto",
+          "sv": "Ny RTL Z-video mottagen",
+          "no": "Ny RTL Z-video mottatt",
+          "es": "Nuevo vídeo de RTL Z recibido",
+          "da": "Ny RTL Z-video modtaget",
+          "ru": "Получено новое видео RTL Z",
+          "pl": "Otrzymano nowy film RTL Z"
+        },
+        "description": {
+          "en": "Triggered when a new video from RTL Z is received.",
+          "nl": "Geactiveerd wanneer een nieuwe video van RTL Z wordt ontvangen.",
+          "de": "Ausgelöst, wenn ein neues Video von RTL Z empfangen wird.",
+          "fr": "Déclenché lorsqu'une nouvelle vidéo de RTL Z est reçue.",
+          "it": "Attivato quando viene ricevuto un nuovo video da RTL Z.",
+          "sv": "Aktiveras när en ny video tas emot från RTL Z.",
+          "no": "Utløst når en ny video fra RTL Z mottas.",
+          "es": "Activado cuando se recibe un nuevo vídeo de RTL Z.",
+          "da": "Udløst, når en ny video fra RTL Z modtages.",
+          "ru": "Срабатывает, когда поступает новое видео от RTL Z.",
+          "pl": "Wyzwalane, gdy otrzymano nowy film z RTL Z."
+        },
+        "tokens": [
+          {
+            "name": "url",
+            "title": {
+              "en": "Video URL",
+              "nl": "Video URL",
+              "de": "Video-URL",
+              "fr": "URL de la vidéo",
+              "it": "URL del video",
+              "sv": "Video-URL",
+              "no": "Video-URL",
+              "es": "URL del vídeo",
+              "da": "Video-URL",
+              "ru": "URL видео",
+              "pl": "URL filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Publication Date",
+              "nl": "Publicatiedatum",
+              "de": "Veröffentlichungsdatum",
+              "fr": "Date de publication",
+              "it": "Data di pubblicazione",
+              "sv": "Publiceringsdatum",
+              "no": "Publiseringsdato",
+              "es": "Fecha de publicación",
+              "da": "Udgivelsesdato",
+              "ru": "Дата публикации",
+              "pl": "Data publikacji"
+            },
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Titel van de video",
+              "de": "Videotitel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del vídeo",
+              "da": "Videotitel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Video Content",
+              "nl": "Inhoud van de video",
+              "de": "Videoinhalt",
+              "fr": "Contenu de la vidéo",
+              "it": "Contenuto del video",
+              "sv": "Videoinnehåll",
+              "no": "Videoinnhold",
+              "es": "Contenido del vídeo",
+              "da": "Videoindhold",
+              "ru": "Содержание видео",
+              "pl": "Zawartość filmu"
+            },
+            "type": "string"
           }
         ]
       },
@@ -289,6 +440,57 @@
               "da": "Video-URL",
               "ru": "URL видео",
               "pl": "URL filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Publication Date",
+              "nl": "Publicatiedatum",
+              "de": "Veröffentlichungsdatum",
+              "fr": "Date de publication",
+              "it": "Data di pubblicazione",
+              "sv": "Publiceringsdatum",
+              "no": "Publiseringsdato",
+              "es": "Fecha de publicación",
+              "da": "Udgivelsesdato",
+              "ru": "Дата публикации",
+              "pl": "Data publikacji"
+            },
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Titel van de video",
+              "de": "Videotitel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del vídeo",
+              "da": "Videotitel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Video Content",
+              "nl": "Inhoud van de video",
+              "de": "Videoinhalt",
+              "fr": "Contenu de la vidéo",
+              "it": "Contenuto del video",
+              "sv": "Videoinnehåll",
+              "no": "Videoinnhold",
+              "es": "Contenido del vídeo",
+              "da": "Videoindhold",
+              "ru": "Содержание видео",
+              "pl": "Zawartość filmu"
             },
             "type": "string"
           }
@@ -413,6 +615,105 @@
         ]
       },
       {
+        "id": "there_is_rtl_z_video",
+        "title": {
+          "en": "There is a new RTL Z video",
+          "nl": "Er is een nieuwe RTL Z video",
+          "de": "Es gibt ein neues RTL Z-Video",
+          "fr": "Il y a une nouvelle vidéo RTL Z",
+          "it": "C'è un nuovo video RTL Z",
+          "sv": "Det finns en ny RTL Z-video",
+          "no": "Det er en ny RTL Z video",
+          "es": "Hay un nuevo vídeo de RTL Z",
+          "da": "Der er en ny RTL Z video",
+          "ru": "Есть новое видео RTL Z",
+          "pl": "Jest nowy film RTL Z"
+        },
+        "description": {
+          "en": "Check if there is a new video from RTL Z.",
+          "nl": "Controleer of er een nieuwe video van RTL Z is.",
+          "de": "Überprüfen Sie, ob es ein neues Video von RTL Z gibt.",
+          "fr": "Vérifiez s'il y a une nouvelle vidéo de RTL Z.",
+          "it": "Verifica se c'è un nuovo video da RTL Z.",
+          "sv": "Kontrollera om det finns en ny video från RTL Z.",
+          "no": "Sjekk om det er en ny video fra RTL Z.",
+          "es": "Comprueba si hay un nuevo vídeo de RTL Z.",
+          "da": "Tjek om der er en ny video fra RTL Z.",
+          "ru": "Проверьте, есть ли новое видео от RTL Z.",
+          "pl": "Sprawdź, czy jest nowy film z RTL Z."
+        },
+        "tokens": [
+          {
+            "name": "url",
+            "title": {
+              "en": "Video URL",
+              "nl": "Video URL",
+              "de": "Video-URL",
+              "fr": "URL de la vidéo",
+              "it": "URL del video",
+              "sv": "Video-URL",
+              "no": "Video-URL",
+              "es": "URL del vídeo",
+              "da": "Video-URL",
+              "ru": "URL видео",
+              "pl": "URL filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Publication Date",
+              "nl": "Publicatiedatum",
+              "de": "Veröffentlichungsdatum",
+              "fr": "Date de publication",
+              "it": "Data di pubblicazione",
+              "sv": "Publiceringsdatum",
+              "no": "Publiseringsdato",
+              "es": "Fecha de publicación",
+              "da": "Udgivelsesdato",
+              "ru": "Дата публикации",
+              "pl": "Data publikacji"
+            },
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Titel van de video",
+              "de": "Videotitel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del vídeo",
+              "da": "Videotitel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Video Content",
+              "nl": "Inhoud van de video",
+              "de": "Videoinhalt",
+              "fr": "Contenu de la vidéo",
+              "it": "Contenuto del video",
+              "sv": "Videoinnehåll",
+              "no": "Videoinnhold",
+              "es": "Contenido del vídeo",
+              "da": "Videoindhold",
+              "ru": "Содержание видео",
+              "pl": "Zawartość filmu"
+            },
+            "type": "string"
+          }
+        ]
+      },
+      {
         "id": "there_is_rtl_nieuws_video",
         "title": {
           "en": "There is a RTL Nieuws video",
@@ -451,10 +752,61 @@
               "it": "URL del video",
               "sv": "Video-URL",
               "no": "Video-URL",
-              "es": "URL del video",
+              "es": "URL del vídeo",
               "da": "Video-URL",
               "ru": "URL видео",
               "pl": "URL filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Publication Date",
+              "nl": "Publicatiedatum",
+              "de": "Veröffentlichungsdatum",
+              "fr": "Date de publication",
+              "it": "Data di pubblicazione",
+              "sv": "Publiceringsdatum",
+              "no": "Publiseringsdato",
+              "es": "Fecha de publicación",
+              "da": "Udgivelsesdato",
+              "ru": "Дата публикации",
+              "pl": "Data publikacji"
+            },
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Titel van de video",
+              "de": "Videotitel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del vídeo",
+              "da": "Videotitel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Video Content",
+              "nl": "Inhoud van de video",
+              "de": "Videoinhalt",
+              "fr": "Contenu de la vidéo",
+              "it": "Contenuto del video",
+              "sv": "Videoinnehåll",
+              "no": "Videoinnhold",
+              "es": "Contenido del vídeo",
+              "da": "Videoindhold",
+              "ru": "Содержание видео",
+              "pl": "Zawartość filmu"
             },
             "type": "string"
           }
@@ -499,10 +851,61 @@
               "it": "URL del video",
               "sv": "Video-URL",
               "no": "Video-URL",
-              "es": "URL del video",
+              "es": "URL del vídeo",
               "da": "Video-URL",
               "ru": "URL видео",
               "pl": "URL filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Publication Date",
+              "nl": "Publicatiedatum",
+              "de": "Veröffentlichungsdatum",
+              "fr": "Date de publication",
+              "it": "Data di pubblicazione",
+              "sv": "Publiceringsdatum",
+              "no": "Publiseringsdato",
+              "es": "Fecha de publicación",
+              "da": "Udgivelsesdato",
+              "ru": "Дата публикации",
+              "pl": "Data publikacji"
+            },
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Titel van de video",
+              "de": "Videotitel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del vídeo",
+              "da": "Videotitel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł filmu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Video Content",
+              "nl": "Inhoud van de video",
+              "de": "Videoinhalt",
+              "fr": "Contenu de la vidéo",
+              "it": "Contenuto del video",
+              "sv": "Videoinnehåll",
+              "no": "Videoinnhold",
+              "es": "Contenido del vídeo",
+              "da": "Videoindhold",
+              "ru": "Содержание видео",
+              "pl": "Zawartość filmu"
             },
             "type": "string"
           }

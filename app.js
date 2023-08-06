@@ -49,11 +49,12 @@ class RtlNieuwsApp extends Homey.App {
                 if (latestItem.title && (latestItem.title.includes('RTL Nieuws') || latestItem.title.includes('RTL Weer'))) {
                     this.log(`[checkRssFeed] - skip latestItem due to containing RTL in title:`, latestItem.title);
                     [, latestItem] = feed.items;
+                    console.log();
                 }
 
                 this.log(`[checkRssFeed] - got latestItem:`, latestItem);
                 const { title, link, content, pubDate, enclosure } = latestItem;
-                const imageUrl = enclosure.url || "";
+                const imageUrl = enclosure.url || '';
                 const data = {
                     title,
                     link,
@@ -61,57 +62,61 @@ class RtlNieuwsApp extends Homey.App {
                     pubDate,
                     imageUrl
                 };
-                
+
                 this.log(`[checkRssFeed] - trigger new article Data:`, data);
 
-                // Check if the new article has a different pubDate from the last triggered article
-                if (pubDate !== this.lastTriggeredPubDate) {
-                    this.log(`[checkRssFeed] - trigger new article Data:`, data);
-                    this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
-
-                    // Update the lastTriggeredPubDate with the current pubDate
-                    this.lastTriggeredPubDate = pubDate;
-                } else {
-                    this.log(`[checkRssFeed] - Article already triggered, skipping...`);
-                }
+                this.triggerFlows(data);
             }
-
-                // Check if the latest item is from RTL Nieuws
-                if (latestItem.title.includes('RTL Nieuws')) {
-                    // Controleer of de link al eerder is ontvangen
-                    if (!this.receivedVideoUrls.has(latestItem.link)) {
-                        // Voeg de link toe aan de Set
-                        this.receivedVideoUrls.add(latestItem.link);
-
-                        this.log(`[checkRssFeed] - trigger new video from RTL Nieuws Data:`, latestItem.link);
-                        this.triggerNewVideoNieuws.trigger({ url: latestItem.link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoNieuws', err));
-                    }
-                }
-
-                // Check if the latest item is from RTL Weer
-                if (latestItem.title.includes('RTL Weer')) {
-                    // Controleer of de link al eerder is ontvangen
-                    if (!this.receivedVideoUrls.has(latestItem.link)) {
-                        // Voeg de link toe aan de Set
-                        this.receivedVideoUrls.add(latestItem.link);
-
-                        this.log(`[checkRssFeed] - trigger new video from RTL Weer Data:`, latestItem.link);
-                        this.triggerNewVideoWeer.trigger({ url: latestItem.link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoWeer', err));
-                    }
-                }
-                // Check if the latest item is from RTL Z
-                if (latestItem.title.includes('RTL Z')) {
-                    // Controleer of de link al eerder is ontvangen
-                    if (!this.receivedVideoUrls.has(latestItem.link)) {
-                        // Voeg de link toe aan de Set
-                        this.receivedVideoUrls.add(latestItem.link);
-
-                        this.log(`[checkRssFeed] - trigger new video from RTL Z Data:`, latestItem.link);
-                        this.triggerNewVideoRtlZ.trigger({ url: latestItem.link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoRtlZ', err));
-                    }
-                }
         } catch (err) {
             this.error(`[checkRssFeed] - Error in retrieving RSS-feed:`, err);
+        }
+    }
+
+    async triggerFlows(data) {
+        const { title, link, content, pubDate, imageUrl } = data;
+
+        if (pubDate !== this.lastTriggeredPubDate) {
+            this.log(`[checkRssFeed] - trigger new article Data:`, data);
+            this.triggerNewArticle.trigger(data).catch((err) => this.error('[checkRssFeed] - Error in triggerNewArticle', err));
+
+            // Update the lastTriggeredPubDate with the current pubDate
+            this.lastTriggeredPubDate = pubDate;
+        } else {
+            this.log(`[checkRssFeed] - Article already triggered, skipping...`);
+        }
+        // Check if the latest item is from RTL Nieuws
+        if (title.includes('RTL Nieuws')) {
+            // Controleer of de link al eerder is ontvangen
+            if (!this.receivedVideoUrls.has(link)) {
+                // Voeg de link toe aan de Set
+                this.receivedVideoUrls.add(link);
+
+                this.log(`[checkRssFeed] - trigger new video from RTL Nieuws Data:`, link);
+                this.triggerNewVideoNieuws.trigger({ url: link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoNieuws', err));
+            }
+        }
+
+        // Check if the latest item is from RTL Weer
+        if (title.includes('RTL Weer')) {
+            // Controleer of de link al eerder is ontvangen
+            if (!this.receivedVideoUrls.has(link)) {
+                // Voeg de link toe aan de Set
+                this.receivedVideoUrls.add(link);
+
+                this.log(`[checkRssFeed] - trigger new video from RTL Weer Data:`, link);
+                this.triggerNewVideoWeer.trigger({ url: link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoWeer', err));
+            }
+        }
+        // Check if the latest item is from RTL Z
+        if (title.includes('RTL Z')) {
+            // Controleer of de link al eerder is ontvangen
+            if (!this.receivedVideoUrls.has(link)) {
+                // Voeg de link toe aan de Set
+                this.receivedVideoUrls.add(link);
+
+                this.log(`[checkRssFeed] - trigger new video from RTL Z Data:`, link);
+                this.triggerNewVideoRtlZ.trigger({ url: link }).catch((err) => this.error('[checkRssFeed] - Error in triggerNewVideoRtlZ', err));
+            }
         }
     }
 }
