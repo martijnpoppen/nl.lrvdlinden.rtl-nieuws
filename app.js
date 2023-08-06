@@ -53,27 +53,24 @@ class RtlNieuwsApp extends Homey.App {
                 }
 
                 this.log(`[checkRssFeed] - got latestItem:`, latestItem);
-                const { title, link, content, pubDate, enclosure } = latestItem;
-                const imageUrl = enclosure.url || '';
-                const data = {
-                    title,
-                    link,
-                    content,
-                    pubDate,
-                    imageUrl
-                };
 
-                this.log(`[checkRssFeed] - trigger new article Data:`, data);
-
-                this.triggerFlows(data);
+                this.triggerFlows(latestItem);
             }
         } catch (err) {
             this.error(`[checkRssFeed] - Error in retrieving RSS-feed:`, err);
         }
     }
 
-    async triggerFlows(data) {
-        const { title, link, content, pubDate, imageUrl } = data;
+    async triggerFlows(latestItem) {
+        const { title, link, content, pubDate, enclosure } = latestItem;
+        const imageUrl = enclosure.url || '';
+        const data = {
+            title,
+            link,
+            content,
+            pubDate,
+            imageUrl
+        };
 
         if (pubDate !== this.lastTriggeredPubDate) {
             this.log(`[checkRssFeed] - trigger new article Data:`, data);
