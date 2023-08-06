@@ -1,6 +1,7 @@
 'use strict';
 const Homey = require('homey');
 const Parser = require('rss-parser');
+const fetch = require('node-fetch');
 
 class RtlNieuwsApp extends Homey.App {
     log() {
@@ -39,6 +40,29 @@ class RtlNieuwsApp extends Homey.App {
         this.checkRssFeed();
     }
 
+    async setImage(imagePath = null) {
+        try {
+            if (!this._image) {
+                this._imageSet = false;
+                this._image = await this.homey.images.createImage();
+
+                this.log(`[setImage] - Registering Device image`);
+            }
+
+            await this._image.setStream(async (stream) => {
+                    this.homey.app.log(`[setImage] - Setting image - `, imagePath);
+
+                    let res = await fetch(imagePath);
+                    return res.body.pipe(stream);
+            });
+
+            return Promise.resolve(true);
+        } catch (e) {
+            this.homey.app.error(e);
+            return Promise.reject(e);
+        }
+    }
+
     async checkRssFeed() {
         try {
             const feed = await this.parser.parseURL(this.feedUrl);
@@ -64,13 +88,19 @@ class RtlNieuwsApp extends Homey.App {
     async triggerFlows(latestItem) {
         const { title, link, content, pubDate, enclosure } = latestItem;
         const imageUrl = enclosure.url || '';
+
+        await this.setImage(imageUrl);
+
         const data = {
             title,
             link,
             content,
             pubDate,
-            imageUrl
+            imageUrl,
+            image: this._image
         };
+
+        
 
         if (pubDate !== this.lastTriggeredPubDate) {
             this.log(`[checkRssFeed] - trigger new article Data:`, data);
