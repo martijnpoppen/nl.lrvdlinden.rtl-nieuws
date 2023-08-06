@@ -1,30 +1,30 @@
 {
-  "id": "new_video_nieuws",
+  "id": "there_is_rtl_z_video",
   "title": {
-    "en": "New RTL Nieuws video received",
-    "nl": "Nieuwe RTL Nieuws video ontvangen",
-    "de": "Neues RTL Nieuws-Video empfangen",
-    "fr": "Nouvelle vidéo RTL Nieuws reçue",
-    "it": "Nuovo video RTL Nieuws ricevuto",
-    "sv": "Ny RTL Nieuws-video mottagen",
-    "no": "Ny RTL Nieuws-video mottatt",
-    "es": "Nuevo vídeo de RTL Nieuws recibido",
-    "da": "Ny RTL Nieuws-video modtaget",
-    "ru": "Получено новое видео RTL Nieuws",
-    "pl": "Otrzymano nowy film RTL Nieuws"
+    "en": "There is a new RTL Z video",
+    "nl": "Er is een nieuwe RTL Z video",
+    "de": "Es gibt ein neues RTL Z-Video",
+    "fr": "Il y a une nouvelle vidéo RTL Z",
+    "it": "C'è un nuovo video RTL Z",
+    "sv": "Det finns en ny RTL Z-video",
+    "no": "Det er en ny RTL Z video",
+    "es": "Hay un nuevo vídeo de RTL Z",
+    "da": "Der er en ny RTL Z video",
+    "ru": "Есть новое видео RTL Z",
+    "pl": "Jest nowy film RTL Z"
   },
   "description": {
-    "en": "Triggered when a new video from RTL Nieuws is received.",
-    "nl": "Geactiveerd wanneer een nieuwe video van RTL Nieuws wordt ontvangen.",
-    "de": "Ausgelöst, wenn ein neues Video von RTL Nieuws empfangen wird.",
-    "fr": "Déclenché lorsqu'une nouvelle vidéo de RTL Nieuws est reçue.",
-    "it": "Attivato quando viene ricevuto un nuovo video da RTL Nieuws.",
-    "sv": "Aktiveras när en ny video tas emot från RTL Nieuws.",
-    "no": "Utløst når en ny video fra RTL Nieuws mottas.",
-    "es": "Activado cuando se recibe un nuevo vídeo de RTL Nieuws.",
-    "da": "Udløst, når en ny video fra RTL Nieuws modtages.",
-    "ru": "Срабатывает, когда поступает новое видео от RTL Nieuws.",
-    "pl": "Wyzwalane, gdy otrzymano nowy film z RTL Nieuws."
+    "en": "Check if there is a new video from RTL Z.",
+    "nl": "Controleer of er een nieuwe video van RTL Z is.",
+    "de": "Überprüfen Sie, ob es ein neues Video von RTL Z gibt.",
+    "fr": "Vérifiez s'il y a une nouvelle vidéo de RTL Z.",
+    "it": "Verifica se c'è un nuovo video da RTL Z.",
+    "sv": "Kontrollera om det finns en ny video från RTL Z.",
+    "no": "Sjekk om det er en ny video fra RTL Z.",
+    "es": "Comprueba si hay un nuevo vídeo de RTL Z.",
+    "da": "Tjek om der er en ny video fra RTL Z.",
+    "ru": "Проверьте, есть ли новое видео от RTL Z.",
+    "pl": "Sprawdź, czy jest nowy film z RTL Z."
   },
   "tokens": [
     {
@@ -97,3 +97,4 @@
     }
   ]
 }
+

@@ -1,30 +1,30 @@
 {
-  "id": "new_video_nieuws",
+  "id": "new_video_rtlz",
   "title": {
-    "en": "New RTL Nieuws video received",
-    "nl": "Nieuwe RTL Nieuws video ontvangen",
-    "de": "Neues RTL Nieuws-Video empfangen",
-    "fr": "Nouvelle vidéo RTL Nieuws reçue",
-    "it": "Nuovo video RTL Nieuws ricevuto",
-    "sv": "Ny RTL Nieuws-video mottagen",
-    "no": "Ny RTL Nieuws-video mottatt",
-    "es": "Nuevo vídeo de RTL Nieuws recibido",
-    "da": "Ny RTL Nieuws-video modtaget",
-    "ru": "Получено новое видео RTL Nieuws",
-    "pl": "Otrzymano nowy film RTL Nieuws"
+    "en": "New RTL Z video received",
+    "nl": "Nieuwe RTL Z video ontvangen",
+    "de": "Neues RTL Z-Video empfangen",
+    "fr": "Nouvelle vidéo RTL Z reçue",
+    "it": "Nuovo video RTL Z ricevuto",
+    "sv": "Ny RTL Z-video mottagen",
+    "no": "Ny RTL Z-video mottatt",
+    "es": "Nuevo vídeo de RTL Z recibido",
+    "da": "Ny RTL Z-video modtaget",
+    "ru": "Получено новое видео RTL Z",
+    "pl": "Otrzymano nowy film RTL Z"
   },
   "description": {
-    "en": "Triggered when a new video from RTL Nieuws is received.",
-    "nl": "Geactiveerd wanneer een nieuwe video van RTL Nieuws wordt ontvangen.",
-    "de": "Ausgelöst, wenn ein neues Video von RTL Nieuws empfangen wird.",
-    "fr": "Déclenché lorsqu'une nouvelle vidéo de RTL Nieuws est reçue.",
-    "it": "Attivato quando viene ricevuto un nuovo video da RTL Nieuws.",
-    "sv": "Aktiveras när en ny video tas emot från RTL Nieuws.",
-    "no": "Utløst når en ny video fra RTL Nieuws mottas.",
-    "es": "Activado cuando se recibe un nuevo vídeo de RTL Nieuws.",
-    "da": "Udløst, når en ny video fra RTL Nieuws modtages.",
-    "ru": "Срабатывает, когда поступает новое видео от RTL Nieuws.",
-    "pl": "Wyzwalane, gdy otrzymano nowy film z RTL Nieuws."
+    "en": "Triggered when a new video from RTL Z is received.",
+    "nl": "Geactiveerd wanneer een nieuwe video van RTL Z wordt ontvangen.",
+    "de": "Ausgelöst, wenn ein neues Video von RTL Z empfangen wird.",
+    "fr": "Déclenché lorsqu'une nouvelle vidéo de RTL Z est reçue.",
+    "it": "Attivato quando viene ricevuto un nuovo video da RTL Z.",
+    "sv": "Aktiveras när en ny video tas emot från RTL Z.",
+    "no": "Utløst når en ny video fra RTL Z mottas.",
+    "es": "Activado cuando se recibe un nuevo vídeo de RTL Z.",
+    "da": "Udløst, når en ny video fra RTL Z modtages.",
+    "ru": "Срабатывает, когда поступает новое видео от RTL Z.",
+    "pl": "Wyzwalane, gdy otrzymano nowy film z RTL Z."
   },
   "tokens": [
     {

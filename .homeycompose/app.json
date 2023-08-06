@@ -1,6 +1,6 @@
 {
   "id": "nl.lrvdlinden.rtl-nieuws",
-  "version": "1.0.8",
+  "version": "1.1.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": ["local"],
@@ -10,8 +10,9 @@
     "nl": "RTL Nieuws"
   },
   "images": {
-    "large": "/assets/images/large.jpg",
-    "small": "/assets/images/small.jpg"
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png",
+    "xlarge": "/assets/images/xlarge.png"
   },
   "description": {
     "en": "Receive notifications for new articles, new RTL Nieuws video and new RTL Weather Video from RTL Nieuws.",
@@ -64,3 +65,4 @@
   "support": "https://community.homey.app/t/pro-rtl-nieuws-for-homey/85531",
   "homeyCommunityTopicId": 85531
 }
+
